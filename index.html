@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Document</title>
-</head>
-<body>
+ <style media="screen">
+  #cont {
+   display: grid;
+   grid-template-columns: 150px auto 150px;
+   grid-template-rows: 25% 100px auto 200px;
+  }
 
+  .forma {
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   background-color: red;
+  }
+  #powiedz{
+   background-color: green;
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 3;
+   grid-row-end: 3;
+   height: 300px;
+  }
+ </style>
+</head>
+
+<body>
+ <div id="cont">
+  <form class="forma" action="" method="post">
+   <input type="submit" name="" value="Youn said:">
+   <input type="text" name="" value="">
+  </form>
+  <p id="powiedz">
+
+  </p>
+ </div>
 </body>
+
 </html>
