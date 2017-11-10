@@ -6,7 +6,7 @@
 
  function show() {
   let isSaid = sayInput[0].value
-  say.innerHTML = isSaid;
+  say.innerHTML = "Napisałeś: " + isSaid;
  };
 
 })();
