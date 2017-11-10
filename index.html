@@ -6,8 +6,10 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <title>Document</title>
+
  <style media="screen">
   #cont {
+   margin: 20px;
    display: grid;
    grid-template-columns: 150px auto 150px;
    grid-template-rows: 25% 100px auto 200px;
@@ -16,9 +18,20 @@
   .forma {
    grid-column-start: 2;
    grid-column-end: 2;
-   grid-row-start: 2;
+   grid-row-start: 1;
    grid-row-end: 3;
    background-color: red;
+   padding: 10px;
+  }
+  .forma input[type=text]{
+   width: 97.7%;
+   padding: 10px;
+   margin: 10px 0;
+   text-align: center;
+  }
+  .forma #but{
+   width: 100%;
+   padding: 10px;
   }
   #powiedz{
    background-color: green;
@@ -27,20 +40,25 @@
    grid-row-start: 3;
    grid-row-end: 3;
    height: 300px;
+   padding: 10px;
+   font-size: 1.7em;
+   font-family: sans-serif;
+   color: white;
   }
  </style>
 </head>
 
 <body>
  <div id="cont">
-  <form class="forma" action="" method="post">
-   <input type="submit" name="" value="Youn said:">
-   <input type="text" name="" value="">
-  </form>
+  <div class="forma">
+    <button id="but">GUZIK</button>
+    <input type="text" name="" value="" >
+  </div>
   <p id="powiedz">
 
   </p>
  </div>
+ <script src="echo.js" charset="utf-8"></script>
 </body>
 
 </html>
