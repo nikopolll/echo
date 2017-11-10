@@ -1,12 +1,12 @@
 (function() {
  let sayButton = document.getElementById("but");
  let sayInput = document.querySelectorAll("input[type=text]");
- let powiedz = document.getElementById('powiedz');
+ let say = document.getElementById('say');
  sayButton.addEventListener("click", pokaz);
 
  function pokaz() {
-  let wpisane = sayInput[0].value
-  powiedz.innerHTML = wpisane;
+  let isSaid = sayInput[0].value
+ say.innerHTML = isSaid;
  };
 
 })();
