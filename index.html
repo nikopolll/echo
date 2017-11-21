@@ -8,38 +8,52 @@
  <title>Document</title>
 
  <style media="screen">
+ *{box-sizing: border-box;}
+ p{margin: 5px 0;}
   #cont {
    margin: 20px;
    display: grid;
    grid-template-columns: 150px auto 150px;
-   grid-template-rows: 25% 100px auto 200px;
+   grid-template-rows: 50px auto auto auto auto;
   }
-
   .forma {
    grid-column-start: 2;
    grid-column-end: 2;
    grid-row-start: 1;
    grid-row-end: 3;
-   background-color: red;
+   background-color: #d03c3c;
    padding: 10px;
   }
   .forma input[type=text]{
-   width: 97.7%;
-   padding: 10px;
-   margin: 10px 0;
+   width: 100%;
+   padding: 10px 15px;
+   margin: 0;
    text-align: center;
   }
   .forma #but{
    width: 100%;
    padding: 10px;
+   margin-bottom: 10px;
   }
-  #say{
-   background-color: green;
+  #say {
+   background-color: #55a24f;
    grid-column-start: 2;
    grid-column-end: 2;
    grid-row-start: 3;
    grid-row-end: 3;
-   height: 300px;
+   min-height: 200px;
+   padding: 10px;
+   font-size: 1.7em;
+   font-family: sans-serif;
+   color: white;
+  }
+  #imidiet {
+   background-color: #335fc3;
+   grid-column-start: 2;
+   grid-column-end: 2;
+   grid-row-start: 4;
+   grid-row-end: 5;
+   min-height: 200px;
    padding: 10px;
    font-size: 1.7em;
    font-family: sans-serif;
@@ -55,6 +69,9 @@
     <input type="text" name="" value="" >
   </div>
   <p id="say">
+
+  </p>
+  <p id="imidiet">
 
   </p>
  </div>
